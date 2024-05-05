@@ -20,73 +20,73 @@ class categories extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                listMenu(
-                    context, Icons.hotel, 'hotel', Colors.green, list_item()),
-                listMenu(
-                    context, Icons.train, 'train', Colors.black, list_item()),
+                listMenu(context, Icons.hotel, 'hotel', Colors.green,
+                    const list_item()),
+                listMenu(context, Icons.train, 'train', Colors.black,
+                    const list_item()),
               ],
             ),
             const SizedBox(
