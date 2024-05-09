@@ -207,8 +207,7 @@ class home_screen extends StatelessWidget {
                         color: Colors.transparent,
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image:
-                              AssetImage("assets/images/fruit/kiwi/kiwi.jpg"),
+                          image: AssetImage("assets/images/kiwi.jpg"),
                         ),
                       ),
                       child: Column(

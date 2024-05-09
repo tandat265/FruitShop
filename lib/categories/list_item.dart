@@ -181,8 +181,7 @@ class _list_itemState extends State<list_item> {
                               color: Colors.transparent,
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/images/fruit/kiwi/kiwi.jpg"),
+                                image: AssetImage("assets/images/kiwi.jpg"),
                               ),
                             ),
                             child: Column(

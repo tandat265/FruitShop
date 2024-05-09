@@ -21,8 +21,8 @@ class login_screen extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                    'https://cdn.tgdd.vn/Files/2018/03/15/1074573/6-loi-ich-bat-ngo-cua-trai-kiwi-202110211628557582.jpg',
+                  image: AssetImage(
+                    'assets/images/login_screen.jpg',
                   ),
                   fit: BoxFit.contain,
                 ),

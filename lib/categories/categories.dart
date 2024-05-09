@@ -101,7 +101,7 @@ class categories extends StatelessWidget {
   Padding listMenu(BuildContext context, IconData icon, String text,
       Color color, Widget destinations) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+      padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
       child: Container(
         width: 165,
         height: 60,
@@ -131,7 +131,7 @@ class categories extends StatelessWidget {
               ),
               Flexible(
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 20),
+                  padding: const EdgeInsets.only(right: 0),
                   child: Text(
                     text,
                     style: const TextStyle(
