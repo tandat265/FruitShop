@@ -12,7 +12,7 @@ class _detail_itemState extends State<detail_item> {
   bool isExpanded = false;
   int maxLength = 150; // Số ký tự tối đa trước khi hiển thị "Xem thêm"
   String cmtContent =
-      "Nội dung ở đây Nội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đây";
+      "Nội dung ở đây Nội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đây Nội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đâyNội dung ở đây";
   final FocusNode _commentFocusNode = FocusNode();
 
   Widget commentWidget() {
@@ -90,6 +90,7 @@ class _detail_itemState extends State<detail_item> {
           },
         ),
       ),
+      bottomNavigationBar: const CustomBottomNavigationBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -205,14 +206,7 @@ class _detail_itemState extends State<detail_item> {
                       ),
                       const SizedBox(width: 4),
                       const Text(
-                        "5 ",
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey,
-                        ),
-                      ),
-                      const Text(
-                        "Likes",
+                        "5 Likes",
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -300,5 +294,93 @@ class ImageList extends StatelessWidget {
                 fit: BoxFit.cover,
               ));
         });
+  }
+}
+
+class CustomBottomNavigationBar extends StatelessWidget {
+  const CustomBottomNavigationBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomAppBar(
+      color: Colors.white,
+      child: SizedBox(
+        width: double.infinity,
+        height: kToolbarHeight,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  // Xử lý sự kiện khi nhấp vào ô đầu tiên
+                  print('Chat ngay clicked');
+                },
+                child: Container(
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      right: BorderSide(color: Colors.grey, width: 1.0),
+                    ),
+                  ),
+                  child: const Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.message_outlined, color: Colors.black),
+                      Text("Chat",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  // Xử lý sự kiện khi nhấp vào ô thứ hai
+                  print('Thêm vào giỏ hàng clicked');
+                },
+                child: Container(
+                  // decoration: const BoxDecoration(
+                  //   border: Border(
+                  //     right: BorderSide(color: Colors.grey, width: 1.0),
+                  //   ),
+                  // ),
+                  child: const Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.add_shopping_cart_outlined,
+                          color: Colors.black),
+                      Text("Add to cart",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  // Xử lý sự kiện khi nhấp vào ô thứ ba
+                  print('Mua ngay clicked');
+                },
+                child: Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  color: Colors.red,
+                  child: const Center(
+                    child: Text(
+                      "Buy now",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
